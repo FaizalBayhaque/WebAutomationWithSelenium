@@ -1,0 +1,1 @@
+{"uuid":"dc421240-1bf4-4a34-95a3-0d00d68b3e1a","name":"webautomation.portofolio.BaseWebTest.quitChromeDriver","description":"","start":1651060276977,"stop":1651060278250,"children":["3404b52f-a2d0-4c4a-941c-be58a200ebbb"],"afters":[{"name":"quitChromeDriver","status":"passed","stage":"finished","description":"","start":1651060276978,"stop":1651060278250}]}
