@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webautomation.portofolio.AddToCartNoRegistTest">
+      <class name="webautomation.portofolio.LoginPositiveTest">
         <methods>
+          <include name="registered_user_able_addtocart"/>
           <include name="createChromeDriver"/>
           <include name="quitChromeDriver"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- webautomation.portofolio.AddToCartNoRegistTest -->
+      </class> <!-- webautomation.portofolio.LoginPositiveTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

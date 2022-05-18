@@ -27,6 +27,7 @@ public class AddToCartWithoutRegisterTest extends BaseWebTestHeadless{
     	WebDriver driver = new ChromeDriver();
     	JavascriptExecutor scroll = (JavascriptExecutor) driver;
     	
+    	driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//input[@id='search']")).sendKeys("celana cargo"); 
 		driver.findElement(By.xpath("//button[@title='Pencarian']")).click();
 		scroll.executeScript("window.scrollBy(0,300)");

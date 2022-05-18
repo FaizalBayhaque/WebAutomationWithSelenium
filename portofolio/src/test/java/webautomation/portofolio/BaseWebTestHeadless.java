@@ -23,7 +23,7 @@ public void createChromeDriver() {
 	driver.set(new ChromeDriver(options));
 	explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
 	driver.get().get("https://id.hm.com/");
-	driver.get().manage().window().maximize();
+	
 	
 }
 

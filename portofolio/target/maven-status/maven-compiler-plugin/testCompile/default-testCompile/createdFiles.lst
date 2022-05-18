@@ -1,0 +1,10 @@
+webautomation\portofolio\AddToCartWithoutRegisterTest.class
+webautomation\portofolio\RegistrationPositiveTest.class
+webautomation\portofolio\IDriverManager.class
+webautomation\portofolio\LoginNegativeTest.class
+webautomation\SeleniumTest.class
+webautomation\portofolio\BaseWebTestHeadless.class
+webautomation\portofolio\LoginPositiveTest.class
+webautomation\portofolio\BaseWebTest.class
+webautomation\portofolio\RegistrationNegativeTest.class
+webautomation\portofolio\AddToCartOutOfStock.class

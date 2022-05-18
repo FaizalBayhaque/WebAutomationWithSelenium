@@ -1,0 +1,7 @@
+#surefire_0
+#Tue May 17 12:46:01 ICT 2022
+basedir=C\:\\Users\\User\\Project3\\portofolio
+user.dir=C\:\\Users\\User\\Project3\\portofolio
+suiteXmlFile=testng.xml
+env=stage
+localRepository=C\:\\Users\\User\\.m2\\repository

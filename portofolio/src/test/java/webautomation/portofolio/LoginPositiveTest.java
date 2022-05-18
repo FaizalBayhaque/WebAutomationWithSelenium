@@ -25,6 +25,7 @@ public class LoginPositiveTest extends BaseWebTestHeadless {
     	
     	WebDriver driver = new ChromeDriver();
     	
+    	driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-email']")).sendKeys("generator1@gmail.com"); 
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-pass']")).sendKeys("4ll574R!"); 

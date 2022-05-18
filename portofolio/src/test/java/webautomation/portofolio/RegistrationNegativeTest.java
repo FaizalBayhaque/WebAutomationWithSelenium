@@ -17,9 +17,9 @@ public class RegistrationNegativeTest extends BaseWebTestHeadless{
      */
     @Test
     public void user_regist_with_valid_credentials_but_with_incorrect_password_format() {
-
     	 WebDriver driver = new ChromeDriver();
-    	
+    	 
+    	driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
  		driver.findElement(By.xpath("//div[@class='panel header']//div[@class='inputwrapper join']//button[@name='send']")).click();
 		driver.findElement(By.xpath("//div[contains(@class,'panel header')]//input[@id='firstname']")).sendKeys("Jajang"); 

@@ -18,9 +18,10 @@ public class RegistrationPositiveTest extends BaseWebTestHeadless{
      */
     @Test
     public void user_login_with_correct_credentials_and_correct_password_format() {
-    	
-    	 WebDriver driver = new ChromeDriver();
-    	
+        WebDriver driver = new ChromeDriver();
+        
+        
+    	driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
  		driver.findElement(By.xpath("//div[@class='panel header']//div[@class='inputwrapper join']//button[@name='send']")).click();
 		driver.findElement(By.xpath("//div[contains(@class,'panel header')]//input[@id='firstname']")).sendKeys("Jajang"); 

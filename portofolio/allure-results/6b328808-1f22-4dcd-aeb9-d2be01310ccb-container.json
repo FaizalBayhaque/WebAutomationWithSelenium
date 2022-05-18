@@ -1,0 +1,1 @@
+{"uuid":"6b328808-1f22-4dcd-aeb9-d2be01310ccb","name":"webautomation.portofolio.BaseAPITest.login","description":"","start":1652090171067,"stop":1652090171073,"children":["6b723889-4123-45f1-b3a7-a8681a8133d3"],"befores":[{"name":"login","status":"passed","stage":"finished","description":"","start":1652090171067,"stop":1652090171072}]}

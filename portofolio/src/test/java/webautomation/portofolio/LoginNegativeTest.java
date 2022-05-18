@@ -4,13 +4,9 @@ import org.testng.annotations.Test;
 
 import utils.HardWaitUtils;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 
 /**
@@ -22,9 +18,9 @@ public class LoginNegativeTest extends BaseWebTestHeadless {
      */
     @Test
     public void user_login_with_incorect_email_and_incorrect_password() {
-
-    	 WebDriver driver = new ChromeDriver();
+    	WebDriver driver = new ChromeDriver();
     	
+    	driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-email']")).sendKeys("generator11@gmail.com"); 
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-pass']")).sendKeys("4ll54R!"); 
@@ -36,8 +32,7 @@ public class LoginNegativeTest extends BaseWebTestHeadless {
     }
     @Test
     public void user_login_with_correct_mail_but_with_incorrect_password() {
-
-    	 WebDriver driver = new ChromeDriver();
+    	WebDriver driver = new ChromeDriver();
     	 
  		driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
@@ -51,7 +46,6 @@ public class LoginNegativeTest extends BaseWebTestHeadless {
     }
     @Test
     public void user_login_with_incorrect_email_but_with_correct_password() {
-
     	 WebDriver driver = new ChromeDriver();
     	 
  		driver.get("https://id.hm.com/");
@@ -66,8 +60,7 @@ public class LoginNegativeTest extends BaseWebTestHeadless {
 	}
     @Test
     public void user_login_with_both_email_and_password_form_empty() {
-
-    	 WebDriver driver = new ChromeDriver();
+    	WebDriver driver = new ChromeDriver();
     	 
  		driver.get("https://id.hm.com/");
  		driver.findElement(By.xpath("//div[@class='panel header']//li[@class='authorization-link join hm-sign-in']")).click();
