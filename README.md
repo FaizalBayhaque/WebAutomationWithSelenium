@@ -12,7 +12,7 @@ on main/java folder you can access :
 * HardWaitUtils
 
 on test/java/HnM web automation folder you can access :
-```bash
+
 * Add To Cart Without Register Test
 * Base Web Test
 * Base Web Test Headless
@@ -20,7 +20,7 @@ on test/java/HnM web automation folder you can access :
 * Login Positive Test
 * Registration Negative Test
 * Registration Positive Test
-```
+
 ## Prerequisite
 
 To run this repo, make sure you have maven, selenium, testNg has installed in your machine. This repo works best in Eclipse IDE
