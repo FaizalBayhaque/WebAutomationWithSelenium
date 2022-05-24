@@ -62,7 +62,7 @@ to run the test here are the steps :
 
 * click TestNG Test
 
-# Diclaimer
+# Disclaimer
 
 To run this test all in one time you can click right on the class testsuite.xml and choose RUn As then click TestNG Test
 
