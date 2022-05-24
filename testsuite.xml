@@ -3,12 +3,11 @@
 <suite thread-count="10" parallel="methods" name="Suite">
   <test thread-count="10" parallel="methods" name="Test">
     <classes>
-	  <class name="webautomation.portofolio.RegistrationPositiveTest"/>
- 	  <class name="webautomation.portofolio.RegistrationNegativeTest"/>
-      <class name="webautomation.portofolio.LoginPositiveTest"/>
-  	  <class name="webautomation.portofolio.LoginNegativeTest"/>
-  	  <class name="webautomation.portofolio.AddToCartOutOfStock"/>
-  	  <class name="webautomation.portofolio.AddToCartWithoutRegisterTest"/>
+	  <class name="webautomation.RegistrationPositiveTest"/>
+ 	  <class name="webautomation.RegistrationNegativeTest"/>
+      <class name="webautomation.LoginPositiveTest"/>
+  	  <class name="webautomation.LoginNegativeTest"/>
+  	  <class name="webautomation.AddToCartWithoutRegisterTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-11T14:44:17 ICT" name="Default suite" finished-at="2022-05-11T14:44:24 ICT" duration-ms="7236">
+  <suite started-at="2022-05-24T14:01:30 ICT" name="Suite" finished-at="2022-05-24T14:02:55 ICT" duration-ms="84542">
     <groups>
     </groups>
-    <test started-at="2022-05-11T14:44:17 ICT" name="Default test" finished-at="2022-05-11T14:44:24 ICT" duration-ms="7236">
-      <class name="webautomation.portofolio.LoginPositiveTest">
-        <test-method is-config="true" signature="createChromeDriver()[pri:0, instance:webautomation.portofolio.LoginPositiveTest@4ebff610]" started-at="2022-05-11T14:44:17 ICT" name="createChromeDriver" finished-at="2022-05-11T14:44:24 ICT" duration-ms="6409" status="PASS">
+    <test started-at="2022-05-24T14:01:30 ICT" name="Test" finished-at="2022-05-24T14:02:55 ICT" duration-ms="84542">
+      <class name="webautomation.RegistrationNegativeTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:01:59 ICT" duration-ms="28490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createChromeDriver -->
-        <test-method signature="registered_user_able_addtocart()[pri:0, instance:webautomation.portofolio.LoginPositiveTest@4ebff610]" started-at="2022-05-11T14:44:24 ICT" name="registered_user_able_addtocart" finished-at="2022-05-11T14:44:24 ICT" duration-ms="78" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:01:57 ICT" duration-ms="26995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="user_regist_with_invalid_credentials_but_with_correct_password_format()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:01:57 ICT" name="user_regist_with_invalid_credentials_but_with_correct_password_format" finished-at="2022-05-24T14:02:01 ICT" duration-ms="3348" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+              <![CDATA[element not interactable
+  (Session info: headless chrome=101.0.4951.67)
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, sendKeysToElement {id=d8b51c5a-174d-4910-b106-332494695d31, value=[Ljava.lang.CharSequence;@2adacd84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f3d150ef6bce96fd03bdd741e839d087)] -> xpath: //div[contains(@class,'panel header')]//input[@id='firstname']]
+Session ID: f3d150ef6bce96fd03bdd741e839d087]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at webautomation.portofolio.LoginPositiveTest.registered_user_able_addtocart(LoginPositiveTest.java:29)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=101.0.4951.67)
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, sendKeysToElement {id=d8b51c5a-174d-4910-b106-332494695d31, value=[Ljava.lang.CharSequence;@2adacd84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f3d150ef6bce96fd03bdd741e839d087)] -> xpath: //div[contains(@class,'panel header')]//input[@id='firstname']]
+Session ID: f3d150ef6bce96fd03bdd741e839d087
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:105)
+at webautomation.RegistrationNegativeTest.user_regist_with_invalid_credentials_but_with_correct_password_format(RegistrationNegativeTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -31,33 +65,407 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registered_user_able_addtocart -->
-        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.portofolio.LoginPositiveTest@4ebff610]" started-at="2022-05-11T14:44:24 ICT" name="quitChromeDriver" finished-at="2022-05-11T14:44:24 ICT" duration-ms="469" status="PASS">
+        </test-method> <!-- user_regist_with_invalid_credentials_but_with_correct_password_format -->
+        <test-method signature="user_regist_with_valid_credentials_but_with_incorrect_password_format()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:01:59 ICT" name="user_regist_with_valid_credentials_but_with_incorrect_password_format" finished-at="2022-05-24T14:02:02 ICT" duration-ms="3718" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, clickElement {id=87b441c9-8204-461f-adce-0b182c2a591c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f3d150ef6bce96fd03bdd741e839d087)] -> xpath: //div[@class='panel header']//div[@class='inputwrapper join']//button[@name='send']]
+Session ID: f3d150ef6bce96fd03bdd741e839d087]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, clickElement {id=87b441c9-8204-461f-adce-0b182c2a591c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f3d150ef6bce96fd03bdd741e839d087)] -> xpath: //div[@class='panel header']//div[@class='inputwrapper join']//button[@name='send']]
+Session ID: f3d150ef6bce96fd03bdd741e839d087
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:75)
+at webautomation.RegistrationNegativeTest.user_regist_with_valid_credentials_but_with_incorrect_password_format(RegistrationNegativeTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_regist_with_valid_credentials_but_with_incorrect_password_format -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:02:01 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:03 ICT" duration-ms="1952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitChromeDriver -->
-      </class> <!-- webautomation.portofolio.LoginPositiveTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.RegistrationNegativeTest@21ba0741]" started-at="2022-05-24T14:02:02 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:02 ICT" duration-ms="8" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d150ef6bce96fd03bdd741e839d087]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d150ef6bce96fd03bdd741e839d087, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d150ef6bce96fd03bdd741e839d087
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:120)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:674)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:515)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:254)
+at webautomation.BaseWebTest.quitChromeDriver(BaseWebTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:10962
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:116)
+... 26 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:10962
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:79)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:103)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$0(DriverCommandExecutor.java:93)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:10962
+at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:10962
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- webautomation.RegistrationNegativeTest -->
+      <class name="webautomation.LoginPositiveTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.LoginPositiveTest@58ce9668]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:01:56 ICT" duration-ms="25363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="registered_user_able_addtocart()[pri:0, instance:webautomation.LoginPositiveTest@58ce9668]" started-at="2022-05-24T14:01:56 ICT" name="registered_user_able_addtocart" finished-at="2022-05-24T14:02:04 ICT" duration-ms="7824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registered_user_able_addtocart -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.LoginPositiveTest@58ce9668]" started-at="2022-05-24T14:02:04 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:06 ICT" duration-ms="2774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- webautomation.LoginPositiveTest -->
+      <class name="webautomation.RegistrationPositiveTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.RegistrationPositiveTest@7393222f]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:01:56 ICT" duration-ms="26105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="user_login_with_correct_credentials_and_correct_password_format()[pri:0, instance:webautomation.RegistrationPositiveTest@7393222f]" started-at="2022-05-24T14:01:56 ICT" name="user_login_with_correct_credentials_and_correct_password_format" finished-at="2022-05-24T14:02:10 ICT" duration-ms="13980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_login_with_correct_credentials_and_correct_password_format -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.RegistrationPositiveTest@7393222f]" started-at="2022-05-24T14:02:10 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:10 ICT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- webautomation.RegistrationPositiveTest -->
+      <class name="webautomation.LoginNegativeTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:02:05 ICT" duration-ms="35057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:02:04 ICT" duration-ms="33773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:02:04 ICT" duration-ms="34157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:02:03 ICT" duration-ms="32370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="user_login_with_both_email_and_password_form_empty()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:03 ICT" name="user_login_with_both_email_and_password_form_empty" finished-at="2022-05-24T14:02:10 ICT" duration-ms="7618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_login_with_both_email_and_password_form_empty -->
+        <test-method signature="user_login_with_correct_mail_but_with_incorrect_password()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:04 ICT" name="user_login_with_correct_mail_but_with_incorrect_password" finished-at="2022-05-24T14:02:13 ICT" duration-ms="8812" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at webautomation.LoginNegativeTest.user_login_with_correct_mail_but_with_incorrect_password(LoginNegativeTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_login_with_correct_mail_but_with_incorrect_password -->
+        <test-method signature="user_login_with_incorect_email_and_incorrect_password()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:04 ICT" name="user_login_with_incorect_email_and_incorrect_password" finished-at="2022-05-24T14:02:13 ICT" duration-ms="8490" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at webautomation.LoginNegativeTest.user_login_with_incorect_email_and_incorrect_password(LoginNegativeTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_login_with_incorect_email_and_incorrect_password -->
+        <test-method signature="user_login_with_incorrect_email_but_with_correct_password()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:05 ICT" name="user_login_with_incorrect_email_but_with_correct_password" finished-at="2022-05-24T14:02:11 ICT" duration-ms="5632" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-5D97ORV', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='panel header']//span[@class='input-info invalid button-validation-message'][normalize-space()='Tidak valid login atau kata sandi anda.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at webautomation.LoginNegativeTest.user_login_with_incorrect_email_but_with_correct_password(LoginNegativeTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_login_with_incorrect_email_but_with_correct_password -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:10 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:10 ICT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:11 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:13 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:13 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.LoginNegativeTest@2796aeae]" started-at="2022-05-24T14:02:13 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:13 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- webautomation.LoginNegativeTest -->
+      <class name="webautomation.AddToCartWithoutRegisterTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:webautomation.AddToCartWithoutRegisterTest@b4711e2]" started-at="2022-05-24T14:01:30 ICT" name="beforeMethod" finished-at="2022-05-24T14:01:59 ICT" duration-ms="28287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="non_registered_user_able_additemtocart()[pri:0, instance:webautomation.AddToCartWithoutRegisterTest@b4711e2]" started-at="2022-05-24T14:01:59 ICT" name="non_registered_user_able_additemtocart" finished-at="2022-05-24T14:02:54 ICT" duration-ms="55631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- non_registered_user_able_additemtocart -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webautomation.AddToCartWithoutRegisterTest@b4711e2]" started-at="2022-05-24T14:02:54 ICT" name="quitChromeDriver" finished-at="2022-05-24T14:02:55 ICT" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- webautomation.AddToCartWithoutRegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
