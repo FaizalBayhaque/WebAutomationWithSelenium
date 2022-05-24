@@ -7,17 +7,17 @@ This repo is about my last project making web automation using selenium. Website
 
 Positive Test
 
-User register with correct credentials
+* User register with correct credentials
 
-User login with correct credentials
+* User login with correct credentials
 
-User add item to cart without doing register or login
+* User add item to cart without doing register or login
 
 Negative Test
 
-User login with incorrect credentials
+* User login with incorrect credentials
 
-User register with incorrect credentials
+* User register with incorrect credentials
 
 ## Getting Started
 
