@@ -52,7 +52,7 @@ To run this repo, make sure you have maven, selenium, testNg has installed in yo
 ## Running the tests
 to run the test here are the steps :
 
-* go to test/java/HnM web automation folder
+* go to test/java/web automation folder
 
 * click the package that you want to choose. (ex: Login Positive Test)
 
