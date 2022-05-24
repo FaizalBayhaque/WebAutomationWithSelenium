@@ -24,7 +24,7 @@ Negative Test
 
 * User register with valid credentials but with incorrect password format
 
-* User register with invalid credentials but with correc password format
+* User register with invalid credentials but with correct password format
 
 ## Getting Started
 
