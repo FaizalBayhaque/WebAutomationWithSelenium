@@ -16,7 +16,7 @@ import org.testng.Assert;
 /**
  * Unit test for simple App.
  */
-public class LoginPositiveTest extends BaseWebTestHeadless {
+public class LoginPositiveTest extends BaseWebTest {
     /**
      * Rigorous Test :-)
      */

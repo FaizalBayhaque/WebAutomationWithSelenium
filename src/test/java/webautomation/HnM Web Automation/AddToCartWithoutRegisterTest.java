@@ -17,7 +17,7 @@ import org.testng.Assert;
 /**
  * Unit test for simple App.
  */
-public class AddToCartWithoutRegisterTest extends BaseWebTestHeadless{
+public class AddToCartWithoutRegisterTest extends BaseWebTest {
     /**
      * Rigorous Test :-)
      * 

@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Unit test for simple App.
  */
-public class RegistrationPositiveTest extends BaseWebTestHeadless{
+public class RegistrationPositiveTest extends BaseWebTest {
     /**
      * Rigorous Test :-)
      */
