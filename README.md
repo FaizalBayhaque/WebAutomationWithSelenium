@@ -1,7 +1,23 @@
 # Web Automation With Selenium
 
 
-This repo is about my last project making web automation using selenium. Website that I do for automation testing is https://id.HnM.com. Feature that I test in this case is Registration, Login, Adding item to the cart without doing register. Scenario that I use are user doing registration with right form and wrong form, user doing login with right form and wrong form, and user doing add tp cart some items into their cart without doing any registration and login scenario.
+This repo is about my last project making web automation using selenium. Website that I do for automation testing is https://id.HnM.com. Feature that I test in this case is Registration, Login, Adding item to the cart without doing register. 
+
+# Test Scenario
+
+Positive Test
+
+User register with correct credentials
+
+User login with correct credentials
+
+User add item to cart without doing register or login
+
+Negative Test
+
+User login with incorrect credentials
+
+User register with incorrect credentials
 
 ## Getting Started
 
