@@ -40,6 +40,7 @@ on test/java/HnM web automation folder you can access :
 ## Prerequisite
 
 To run this repo, make sure you have maven, selenium, testNg has installed in your machine. This repo works best in Eclipse IDE
+
 ## Running the tests
 to run the test here are the steps :
 
@@ -52,6 +53,10 @@ to run the test here are the steps :
 * choose Run As
 
 * click TestNG Test
+
+# Diclaimer
+
+To run this test all in one time you can click right on the class testsuite.xml. Before that, you need to adjust the suite thread count and test thread count to 9 since there are nine test case. But, if you want to run it one by one you dont need to change them. Also, for RegistrationPositiveTest.java class you need to generate random email for this one. Since you can only run the test with one unregistered email.
 
 ## Built With
 * Maven - Dependency Management
