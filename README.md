@@ -56,7 +56,7 @@ to run the test here are the steps :
 
 * click the package that you want to choose. (ex: Login Positive Test)
 
-* click right on the class LoginPositiveTest,java
+* click right on the class LoginPositiveTest.java
 
 * choose Run As
 
@@ -67,11 +67,11 @@ to run the test here are the steps :
 To run this test all in one time you can click right on the class testsuite.xml and choose RUn As then click TestNG Test
 
 ## Built With
-* Maven(https://maven.apache.org/) - Dependency Management
+* [Maven](https://maven.apache.org/) - Dependency Management
 
-* Selenium(https://www.selenium.dev/) - Used to automate web testing
+* [Selenium](https://www.selenium.dev/) - Used to automate web testing
 
-* TestNGhttps://testng.org/) - Test Management
+* [TestNG](https://testng.org/) - Test Management
 
 ## Authors
 
