@@ -3,7 +3,7 @@
 
 This repo is about my last project making web automation using selenium. Website that I do for automation testing is https://id.HnM.com. Feature that I test in this case is Registration, Login, Adding item to the cart without doing register. 
 
-# Test Scenario
+# Test Cases
 
 Positive Test
 
@@ -15,9 +15,17 @@ Positive Test
 
 Negative Test
 
-* User login with incorrect credentials
+* User login with incorrect email and incorrect password
 
-* User register with incorrect credentials
+* User login with correct mail but with incorrect password
+
+* User login with incorrect email but with correct password
+
+* User login with both email and password form empty
+
+* User register with valid credentials but with incorrect password format
+
+* User register with invalid credentials but with correc password format
 
 ## Getting Started
 
@@ -27,7 +35,7 @@ on main/java folder you can access :
 
 * HardWaitUtils
 
-on test/java/HnM web automation folder you can access :
+on test/java/web automation folder you can access :
 
 * Add To Cart Without Register Test
 * Base Web Test
@@ -56,14 +64,14 @@ to run the test here are the steps :
 
 # Diclaimer
 
-To run this test all in one time you can click right on the class testsuite.xml. Before that, you need to adjust the suite thread count and test thread count to 9 since there are nine test case. But, if you want to run it one by one you dont need to change them. Also, for RegistrationPositiveTest.java class you need to generate random email for this one. Since you can only run the test with one unregistered email.
+To run this test all in one time you can click right on the class testsuite.xml and choose RUn As then click TestNG Test
 
 ## Built With
-* Maven - Dependency Management
+* Maven(https://maven.apache.org/) - Dependency Management
 
-* Selenium - Used to automate web testing
+* Selenium(https://www.selenium.dev/) - Used to automate web testing
 
-* TestNG - Test Management
+* TestNGhttps://testng.org/) - Test Management
 
 ## Authors
 
