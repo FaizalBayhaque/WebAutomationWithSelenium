@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="10" parallel="methods" name="Test(failed)">
+<suite thread-count="1" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="webautomation.RegistrationNegativeTest">
+      <class name="webautomation.RegistrationPositiveTest">
         <methods>
-          <include name="user_regist_with_valid_credentials_but_with_incorrect_password_format"/>
+          <include name="user_login_with_correct_credentials_and_correct_password_format"/>
           <include name="quitChromeDriver"/>
           <include name="beforeMethod"/>
-          <include name="user_regist_with_invalid_credentials_but_with_correct_password_format"/>
         </methods>
-      </class> <!-- webautomation.RegistrationNegativeTest -->
-      <class name="webautomation.LoginNegativeTest">
-        <methods>
-          <include name="user_login_with_incorect_email_and_incorrect_password"/>
-          <include name="quitChromeDriver"/>
-          <include name="user_login_with_correct_mail_but_with_incorrect_password"/>
-          <include name="user_login_with_incorrect_email_but_with_correct_password"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- webautomation.LoginNegativeTest -->
+      </class> <!-- webautomation.RegistrationPositiveTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -23,13 +23,13 @@ public class RegistrationPositiveTest extends BaseWebTest {
  		driver.findElement(By.xpath("//div[@class='panel header']//div[@class='inputwrapper join']//button[@name='send']")).click();
 		driver.findElement(By.xpath("//div[contains(@class,'panel header')]//input[@id='firstname']")).sendKeys("Jajang"); 
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='lastname']")).sendKeys("Ruhiat");
-		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-email_address']")).sendKeys("genwtor2868@gmail.com"); 
+		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-email_address']")).sendKeys("ge32n2tor2868@gmail.com"); 
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='popup-register-pass']")).sendKeys("4ll574R!"); 
 		driver.findElement(By.xpath("//div[@class='panel header']//input[@id='register-input-custom']")).click();
 		driver.findElement(By.xpath("//div[@class='panel header']//div[@id='popup-mpdal-register']//span[contains(text(),'Bergabunglah dengan Kami')]")).click();
-		HardWaitUtils.hardWait(5);
-		String actualText = 		driver.findElement(By.xpath("//body/div[@class='page-wrapper']/header[@class='page-header']/div[@class='panel wrapper']/div[@class='panel header']/ul[@class='header links']/li[@class='hm-sign-out']/a[1]")).getText();
-		String expectedText = "Keluar";
+		HardWaitUtils.hardWait(8);
+		String actualText = driver.findElement(By.xpath("//label[normalize-space()='Buat Akun']")).getText();
+		String expectedText = "Buat Akun";
 		System.out.println(actualText);
 		Assert.assertTrue(actualText.contains(expectedText));
 		
