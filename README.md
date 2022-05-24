@@ -64,7 +64,7 @@ to run the test here are the steps :
 
 # Disclaimer
 
-To run this test all in one time you can click right on the class testsuite.xml and choose RUn As then click TestNG Test
+To run this test all in one time you can click right on the class testsuite.xml and choose Run As then click TestNG Test
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
