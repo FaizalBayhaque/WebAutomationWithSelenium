@@ -1,6 +1,5 @@
 # Web Automation With Selenium
 
-
 This repo is about my last project making web automation using selenium. Website that I do for automation testing is https://id.HnM.com. Feature that I test in this case is Registration, Login, Adding item to the cart without doing register. 
 
 # Test Cases
